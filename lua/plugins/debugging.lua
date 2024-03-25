@@ -8,7 +8,7 @@ return {
     config = function()
         require("dapui").setup()
 		require("dap-go").setup()
-        require("dap-python").setup('.virtualenvs/debugpy/bin/python')
+        require("dap-python").setup('~/.virtualenvs/debugpy/bin/python')
 
 		local dap, dapui = require("dap"), require("dapui")
 
