@@ -7,3 +7,11 @@ vim.g.mapleader = " "
 
 -- Set line numbers
 vim.cmd("set number")
+
+-- Copilot Settings
+vim.g.copilot_filetypes = {
+  xml = false,
+  markdown = false,
+  c = false,
+}
+
