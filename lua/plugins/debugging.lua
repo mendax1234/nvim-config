@@ -27,9 +27,9 @@ return {
 
     -- Cpp debugger setup
     dap.adapters.cppdbg = {
-        id = 'cppdbg',
-        type = 'executable',
-        command = '/home/wenbo/cpptools/extension/debugAdapters/bin/OpenDebugAD7',
+      id = 'cppdbg',
+      type = 'executable',
+      command = '/home/wenbo/cpptools/extension/debugAdapters/bin/OpenDebugAD7',
     }
 
     -- Cpp debugger configuration
@@ -58,13 +58,16 @@ return {
       },
     }
 
-    -- Set C++ configuration to C
-    dap.configurations.c = dap.configurations.cpp
+  -- Set C++ configuration to C
+  dap.configurations.c = dap.configurations.cpp
 
-    vim.keymap.set("n", "<Leader>dt", ":DapUiToggle<CR>")
-    vim.keymap.set("n", "<Leader>db", ":DapToggleBreakpoint<CR>")
-		vim.keymap.set("n", "<Leader>dc", ":DapContinue<CR>")
-		vim.keymap.set("n", "<Leader>dx", ":DapTerminate<CR>")
-		vim.keymap.set("n", "<Leader>do", ":DapStepOver<CR>")
+  vim.fn.sign_define('DapBreakpoint',{ text ='🟥', texthl ='', linehl ='', numhl =''})
+  vim.fn.sign_define('DapStopped',{ text ='▶️', texthl ='', linehl ='', numhl =''}) 
+
+  -- keymap
+  vim.keymap.set("n", "<Leader>db", ":DapToggleBreakpoint<CR>")
+  vim.keymap.set("n", "<Leader>dc", ":DapContinue<CR>")
+  vim.keymap.set("n", "<Leader>dx", ":DapTerminate<CR>")
+  vim.keymap.set("n", "<Leader>do", ":DapStepOver<CR>")
 end,
 }
