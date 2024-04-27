@@ -15,3 +15,5 @@ vim.g.copilot_filetypes = {
   c = false,
 }
 
+-- Set Tab and indent for certain files
+vim.cmd([[autocmd FileType c setlocal tabstop=4 shiftwidth=4 softtabstop=4]])
