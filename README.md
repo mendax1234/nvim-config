@@ -10,6 +10,7 @@ In Neovim, I use [nvim-dap](https://github.com/mfussenegger/nvim-dap) as the pro
 
 ## None-ls
 - Format code.
+- If you want to use Astyle. Use `sudo apt-get install astyle` on ubuntu system.
 
 ## Autocompeletion
 - [Safely select entries with cr](https://github.com/hrsh7th/nvim-cmp/wiki/Example-mappings#safely-select-entries-with-cr)
