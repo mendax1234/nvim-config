@@ -16,4 +16,4 @@ vim.g.copilot_filetypes = {
 }
 
 -- Using Linux Kernel coding style for 
-vim.cmd([[autocmd FileType c setlocal shiftwidth=8 cindent expandtab]])
+-- vim.cmd([[autocmd FileType c setlocal shiftwidth=8 cindent expandtab]])
